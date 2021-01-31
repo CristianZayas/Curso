@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cursos de css de angular</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">Frases motivadoras 📚</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./about.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Precios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Terminos y condiciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container p-3">
+      <nav class="mar" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+        </ol>
+      </nav>
+    </div>
+
+   <div class="container">
+    <h1>Dejame un comentario</h1>
+
+    <form class="my-5" action="">
+      <div class="row color shadow-lg rounded p-4">
+
+        <div class="col-* col-sm-6 col-md-6">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" class="form-control" type="text" placeholder="Name">
+          </div>
+        </div>
+
+        <div class="col-* col-sm-6 col-md-6">
+          <div class="form-group ">
+            <label for="lastname">Last Name</label>
+            <input id="lastname" class="form-control" type="text" placeholder="Last name">
+          </div>
+        </div>
+      
+        <div class="form-group col-* col-sm-6 col-md-6 ">
+          <label for="email">Email</label>
+          <input id="email" class="form-control" type="email" placeholder="Email">
+        </div>
+
+        <div class="form-group col-* col-sm-6 col-md-6">
+          <label for="select">Select data</label>
+          <select id="select" class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+
+        <div class="form-group ">
+          <label for="text">Comentario</label>
+          <textarea name="text" id="text" class="form-control" placeholder="Escriba el mensaje" cols="20" rows="10"></textarea>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+            <label class="form-check-label" for="flexCheckIndeterminate">
+              Quiero que me contacten 
+            </label>
+          </div>
+        </div>
+
+        <div class="d-grid gap-2 mt-4">
+          <button class="btn btn-warning" >Send</button>
+        </div>
+      </div>
+       
+    </form>
+   </div>
+    <!-- Hai  form -->
+<!-- Hai  Finish  -->
+    <!-- Start Footer -->
+    <footer class="bg-dark text-white p-4">
+      <div class="row">
+        <div class="col-* col-sm-6 col-md-4">
+          <ul>
+            <li class="nav-item2">Facebook <i class="bi bi-facebook"></i></li>
+            <li class="nav-item2">Twitter <i class="bi bi-twitter"></i></li>
+            <li class="nav-item2">Google+ <i class="bi bi-google"></i></li>
+            <li class="nav-item2">Instagram <i class="bi bi-instagram"></i></li>
+          </ul>
+        </div>
+        <div class="col-* col-sm-6 col-md-4">
+          <h4>Pagina oficial de Frases motivadoras</h4>
+          <h5>101 Frases para inspirar y motivar líderes y empleados</h5>
+        </div>
+        <div class="col-* col-sm-6 col-md-4">
+          <ul>
+            <li class="nav-item2">Terminos <i class="bi bi-gear-fill"></i></li>
+            <li class="nav-item2">
+              Usos de la pagina <i class="bi bi-file-earmark-text"></i>
+            </li>
+            <li class="nav-item2">
+              Contatos <i class="bi bi-file-earmark-person"></i>
+            </li>
+            <li class="nav-item2">
+              Sobre mi <i class="bi bi-emoji-sunglasses-fill"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Finish Footer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
