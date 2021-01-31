@@ -24,6 +24,7 @@
       href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="shortcut icon" href="./angular_solidBlack.png" type="image/x-icon">
   </head>
 
   <body>
@@ -75,57 +76,106 @@
     </div>
 
    <div class="container mb-4">
+     
     <h1>Lista de frases más famosas</h1>
-<div class="table-responsive">
-  <table class="table table-dark table-hover">
-    <thead >
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Frases</th>
-        <th scope="col">Frases</th>
-        <th scope="col">Frases</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-        </th>
-        <td>
-          “Las cosas buenas llegan a los que saben esperar.”
-        </td>
-        <td>
-          “No es la más inteligente de las especies la que sobrevive ni la más fuerte, sino la que sabe adaptarse al cambio.”
-        </td>
-        <td>
-          “No busques el momento perfecto, solo busca el momento y hazlo perfecto.”
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-        </th>
-        <td>
-          “No importa lo que pase, siempre tendrás una historia que contar.”
-        </td>
-        <td>
-          “Encuentra lo que te hace feliz y ve hacia ello.”
-        </td>
-        <td>
-          “Aquél que lo piensa mucho antes de dar un paso, se pasará toda su vida en un solo pie.”
-        </td>
-      </tr>
-      
-    </tbody>
-  </table>
-</div>
-   
+
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Calificación de frases ✍</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Presentación de frases</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Comentarios</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        <div class="table-responsive">
+          <table class="table table-dark table-hover">
+            <thead >
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Frases</th>
+                <th scope="col">Frases</th>
+                <th scope="col">Frases</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </th>
+                <td>
+                  “Las cosas buenas llegan a los que saben esperar.”
+                </td>
+                <td>
+                  “No es la más inteligente de las especies la que sobrevive ni la más fuerte, sino la que sabe adaptarse al cambio.”
+                </td>
+                <td>
+                  “No busques el momento perfecto, solo busca el momento y hazlo perfecto.”
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </th>
+                <td>
+                  “No importa lo que pase, siempre tendrás una historia que contar.”
+                </td>
+                <td>
+                  “Encuentra lo que te hace feliz y ve hacia ello.”
+                </td>
+                <td>
+                  “Aquél que lo piensa mucho antes de dar un paso, se pasará toda su vida en un solo pie.”
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div class="card-group">
+          <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2021/01/07/22/15/dandelion-5898546_960_720.jpg" class="card-img-top" alt="pixabay.com">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2014/09/24/09/28/steelwool-458842_960_720.jpg" class="card-img-top" alt="pixabay.com">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2017/08/30/07/56/money-2696234_960_720.jpg" class="card-img-top" alt="pixabay.com">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+        <h2>
+          Comentarios
+        </h2>
+      </div>
+    </div>
 
    </div>
     <!-- Hai  form -->
