@@ -160,25 +160,36 @@
           </div>
         </div>
       </div>
-
-      <button
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn  btn-info container" data-bs-toggle="popover" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+        </div>
+        <div class="col">
+          <button
         type="button"
-        class="btn btn-secondary"
+        class="btn btn-warning container"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Tooltip on top"
       >
         Tooltip on top
       </button>
-      <button
+        </div>
+        <div class="col">
+          <button
         type="button"
-        class="btn btn-secondary"
+        class="btn btn-success container"
         data-bs-toggle="tooltip"
         data-bs-placement="right"
         title="Tooltip on top"
       >
         Tooltip on top
       </button>
+        </div>
+      </div>
+      
+      
+      
       <!-- Button trigger modal -->
       <button
         type="button"
@@ -435,6 +446,15 @@
       var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl);
       });
+
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
+
+      var popover = new bootstrap.Popover(document.querySelector('.example-popover'), {
+  container: 'body'
+})
     </script>
   </body>
 </html>
