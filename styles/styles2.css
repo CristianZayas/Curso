@@ -1,0 +1,28 @@
+body {
+  background-color: rgba(221, 223, 224, 0.637);
+}
+.card-person {
+  flex: 1 400px;
+  padding: 2px 5px 2px 2px;
+}
+.btn-reserva {
+  width: 100% !important;
+}
+.mar {
+  margin-top: 5rem;
+}
+.nav-item2 {
+  list-style: none;
+}
+.color {
+  background-color: rgba(221, 223, 224, 0.637);
+}
+.containers {
+  background-image: url("https://cdn.pixabay.com/photo/2020/12/19/23/13/girls-5845644_960_720.jpg");
+  width: 100%;
+  height: 50em;
+  background-size: cover;
+}
+.btn-warning {
+  margin: 4px;
+}
